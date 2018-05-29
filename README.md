@@ -11,11 +11,11 @@ Uses ncclient to connect and pull raw NETCONF XML configuration using get-config
 Raw output saved to [hostname].config.xml - includes full NETCONF XML wrappers (<reply> etc.)
 
 PARAMETERS - csr-netconf-get-config.py:
--n - hostname to connect to (mandatory)
--p - port to connect to (optional: defaults to 830)
--u - username to connect with (mandatory)
--w - password to connect with (mandatory)
--f - XML filter for the tag to extract (optional: defaults to "<native></native>" as per IOS-XE native YANG model
+ -n - hostname to connect to (mandatory)
+ -p - port to connect to (optional: defaults to 830)
+ -u - username to connect with (mandatory)
+ -w - password to connect with (mandatory)
+ -f - XML filter for the tag to extract (optional: defaults to "<native></native>" as per IOS-XE native YANG model
 
 ---
 USAGE - csr-netconf-edit-config.py:
@@ -24,9 +24,9 @@ Builds proper NETCONF payload by wrapping <config></config> tag around input XML
 Use parameter to input the appropriate tag that includes the appropriate input XML element - e.g. use 'native' for IOS-XE native YANG model container
 
 PARAMETERS - csr-netconf-edit-config.py:
--n - hostname to connect to (mandatory)
--p - port to connect to (optional: defaults to 830)
--u - username to connect with (mandatory)
--w - password to connect with (mandatory)
--c - XML input file containing configuration to push (mandatory)
--t - XML filter for the tag to extract e.g. use "native" to get element for entire IOS-XE native model  (mandatory)
+ -n - hostname to connect to (mandatory)
+ -p - port to connect to (optional: defaults to 830)
+ -u - username to connect with (mandatory)
+ -w - password to connect with (mandatory)
+ -c - XML input file containing configuration to push (mandatory)
+ -t - XML filter for the tag to extract e.g. use "native" to get element for entire IOS-XE native model  (mandatory)
