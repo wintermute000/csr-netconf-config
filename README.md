@@ -1,11 +1,10 @@
 # csr-netconf-config
 NETCONF python scripts to get and edit config - tested on CSR1000V IOS-XE 16.5+
-
-## SCRIPTS:
 * csr-netconf-get-config.py
 * csr-netconf-edit-config
 
----
+requires: ncclient
+
 ## csr-netconf-get-config.py:
 ### Usage
 Uses ncclient to connect and pull raw NETCONF XML configuration using get-config operation.
@@ -18,7 +17,6 @@ Raw output saved to [hostname].config.xml - includes full NETCONF XML wrappers (
  * -w - password to connect with (mandatory)
  * -f - XML filter for the tag to extract (optional: defaults to "<native></native>" as per IOS-XE native YANG model
 
----
 ## csr-netconf-edit-config.py:
 ### Usage
 Uses ncclient to connect and edit NETCONF XML configuration using edit-config operation.
