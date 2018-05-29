@@ -16,7 +16,7 @@ Use parameter to input the XML filter - defaults to "< native > < /native >" as 
  * -p - port to connect to (optional: defaults to 830)
  * -u - username to connect with (mandatory)
  * -w - password to connect with (mandatory)
- * -f - XML filter for the tag to extract (optional: defaults to "< native > < /native >" as per IOS-XE native YANG model
+ * -f - XML filter for the tag to extract (optional: defaults to "< native > < /native >" as per IOS-XE native YANG model)
 
 ## csr-netconf-edit-config.py:
 ### Usage
