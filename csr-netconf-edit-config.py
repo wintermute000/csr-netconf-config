@@ -47,14 +47,14 @@ def netconf_push_payload(hostname, port, user, pw, payload_text):
 if __name__ == "__main__":
 
 # Load parameters
-# note: default filter for IOS-XE native model is entire configuration via </native> tag
+# note: default filter for IOS-XE native model is entire configuration via "native" tag
 # note: default port is 830
     parser = argparse.ArgumentParser()
     parser.add_argument('-n', '--hostname', help='hostname', dest='hostname', required = True)
     parser.add_argument('-p', '--port', help='NETCONF port', dest='port', default = 830, required = False)
     parser.add_argument('-u','--user', help='NETCONF username', dest='username', required = True)
     parser.add_argument('-w','--pw', help='NETCONF password', dest='password', required = True)
-    parser.add_argument('-c', '--filter', help='NETCONF XML configuration', dest='config_xml', required = True)
+    parser.add_argument('-c', '--config', help='NETCONF XML configuration', dest='config_xml', required = True)
     parser.add_argument('-t', '--tag', help='XML tag containing payload e.g. for IOS-XE YANG its "native"', dest='payload_tag', required = True)
     args = parser.parse_args()
 
