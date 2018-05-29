@@ -47,7 +47,7 @@ def netconf_push_payload(hostname, port, user, pw, payload_text):
 if __name__ == "__main__":
 
 # Load parameters
-# note: default filter for IOS-XE native model is entire configuration via "native" tag
+# note: default filter for IOS-XE native YANG model is entire configuration via "native" tag
 # note: default port is 830
     parser = argparse.ArgumentParser()
     parser.add_argument('-n', '--hostname', help='hostname', dest='hostname', required = True)
