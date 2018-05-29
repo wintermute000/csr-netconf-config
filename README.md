@@ -22,7 +22,7 @@ Use parameter to input the XML filter - defaults to "< native > < /native >" as 
 ### Usage
 Uses ncclient to connect and edit NETCONF XML configuration using edit-config operation.  
 Builds proper NETCONF payload by wrapping "config" tag around input XML  
-Use parameter to input the appropriate tag that includes the appropriate input XML element - e.g. use 'native' for IOS-XE native YANG model container  
+Use parameter to input the appropriate tag that includes the appropriate input XML element - e.g. use 'native' for IOS-XE native YANG model container - do this if you only want to send a sub-section (tag) of a larger XML  configuration  
 
 #### Input Parameters
  * -n - hostname to connect to (mandatory)
