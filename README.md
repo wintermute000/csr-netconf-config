@@ -20,7 +20,7 @@ Raw output saved to [hostname].config.xml - includes full NETCONF XML wrappers (
 ## csr-netconf-edit-config.py:
 ### Usage
 Uses ncclient to connect and edit NETCONF XML configuration using edit-config operation.  
-Builds proper NETCONF payload by wrapping <config></config> tag around input XML  
+Builds proper NETCONF payload by wrapping "<config></config>" tag around input XML  
 Use parameter to input the appropriate tag that includes the appropriate input XML element - e.g. use 'native' for IOS-XE native YANG model container  
 
 ### Parameters
